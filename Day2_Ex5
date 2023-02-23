@@ -1,0 +1,33 @@
+package day2;
+
+import java.util.*;
+
+public class Example5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter Employee ID");
+		int eid = scan.nextInt();
+		
+		System.out.println("Enter Employee Name");
+		String ename = scan.next();
+		
+		System.out.println("Enter Employee Salary");
+		int esal = scan.nextInt();
+		
+		System.out.println("Enter Employee Address");
+		String eadd = scan.next();
+		
+		System.out.println("Enter Employee Gender");
+		String egen = scan.next();
+		
+		System.out.println("Enter Employee Email");
+		String email = scan.next();
+		
+		System.out.println(eid + " " + ename + " " + esal + " " + eadd + " " + egen + " " + email);
+
+	}
+
+}
