@@ -1,0 +1,39 @@
+package day2;
+
+import java.util.*;
+
+public class Example6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int x = scan.nextInt();
+		System.out.println("Enter another number: ");
+		int y = scan.nextInt();
+		
+		int sum = 0;
+		int diff = 0;
+		int mul = 0;
+		int div = 0;
+		int mod = 0;
+		
+		if (x>y) {
+			sum = x+y;
+			diff = x-y;
+			mul = x*y;
+			div = x/y;
+			mod = x%y;
+		}
+		else {
+			sum = x+y;
+			diff = y-x;
+			mul = x*y;
+			div = y/x;
+			mod = y%x;
+		}
+		
+		System.out.println(sum + " " + diff + " " + mul + " " + div + " " + mod);
+	}
+
+}
