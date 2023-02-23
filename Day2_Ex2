@@ -1,0 +1,27 @@
+package day2;
+
+import java.util.*;
+
+public class Example2 {
+	
+	public static int calculateDifference(int n) {
+		
+		int sum = 0;
+		int sqsum = 0;
+		
+		for (int i=1; i<=n; i++) {
+			sum+=i;
+			sqsum+=i*i;
+		}
+		
+		int diff = sqsum - (sum*sum);
+		
+		return diff;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Example2.calculateDifference(10));
+	}
+
+}
