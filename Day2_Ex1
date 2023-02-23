@@ -1,0 +1,27 @@
+package day2;
+
+import java.util.*;
+
+public class Example1 {
+
+	public int calculateSum(int n) {
+		int sum = 0;
+		for (int i=1; i<=n; i++) {
+			if ((i%3==0) || (i%5==0)) {
+				sum +=i;
+			}
+		}
+		return sum;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		int inp = scan.nextInt();
+		
+		Example1 obj = new Example1();
+		System.out.println(obj.calculateSum(inp));
+	}
+
+}
