@@ -1,0 +1,19 @@
+public class Example5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=1;
+		int b=2;
+		int c=3;
+		int d=4;
+		int e=5;
+		
+		int sum = a+b+c+d+e;
+		float avg = sum/5;
+		
+		System.out.println(sum);
+		System.out.println(avg);
+
+	}
+
+}
