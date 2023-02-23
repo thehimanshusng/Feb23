@@ -1,0 +1,38 @@
+package day2;
+
+import java.util.*;
+
+public class Example3 {
+
+	public static boolean checkNumber(int n) {
+		
+		boolean inc = false;
+		int x2 = 0;
+		int x1 = 0;
+		
+		while (n/10>=1) {
+			x1 = n%10;
+			n = n/10;
+			x2 = n%10;
+			
+			if (x2<x1) {
+				inc = true;  
+			}
+			else {
+				inc = false;
+				break;
+			}
+			
+		}
+		return inc;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		int inp = scan.nextInt();
+		System.out.println(Example3.checkNumber(inp));
+	}
+
+}
