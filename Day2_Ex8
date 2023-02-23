@@ -1,0 +1,20 @@
+package day2;
+
+import java.util.Scanner;
+
+public class Example8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		
+		float avg = (a+b+c)/3;
+		
+		System.out.println(avg);
+	}
+
+}
