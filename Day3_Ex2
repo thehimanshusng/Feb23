@@ -1,0 +1,14 @@
+package day3;
+
+import java.util.*;
+
+public class Example2 {
+	
+	public static void main (String[] args) {
+		Scanner scan =  new Scanner(System.in);
+		
+		String inp = scan.next();
+		
+		System.out.println(inp.substring(0,1).toUpperCase()+inp.substring(1));
+	}
+}
